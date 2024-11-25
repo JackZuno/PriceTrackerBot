@@ -1,11 +1,14 @@
 import datetime
 import os
-import time
 from dotenv import load_dotenv
 from telegram import Update
 from telegram import ReplyKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 from apscheduler.schedulers.background import BackgroundScheduler
+import firebase_admin
+from firebase_admin import credentials, firestore
+from functions.users.manage_users import *
+from functions.commands.commands import *
 
 # Create a global list to store user chat IDs
 user_chat_ids = {}
@@ -15,9 +18,10 @@ available_commands = """
 Here are the commands you can use:
 1. /start - Start the bot
 2. /auto - Enable automatic notifications
-3. /stop - Stop receiving notifications
-4. /end - End the conversation
-5. /help - Show available commands
+3. /list - List all items
+4. /stop - Stop receiving notifications
+5. /end - End the conversation
+6. /help - Show available commands
 """
 
 async def scheduled_message_pt1(context: ContextTypes.DEFAULT_TYPE):
@@ -36,64 +40,6 @@ async def scheduled_message_pt2(context: ContextTypes.DEFAULT_TYPE):
     except Exception as e:
         print(f"Error sending message to {chat_id}: {e}")
 
-async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    user_username = update.effective_user.username
-    chat_id = update.effective_chat.id
-
-    # Check if the user has already started the bot
-    if chat_id in user_chat_ids and user_chat_ids[chat_id]["started"] == True:
-        await update.message.reply_text("You have already started. You can use other commands now.")
-        return
-
-    msg = [
-        f"Hi {user_username},\n\n",
-        f"Welcome to *JackBotPrice*.\n\n",
-        f"Here, you'll be able to receive notifications about price changes for specific items listed on Amazon.\n\n",
-        f"To enable notifications for the inserted items, use the command */auto*.\n",
-        f"To stop notifications for the inserted items, use the command */stop*.\n",
-        f"To end the conversation with the bot, use the command */end*.\n\n",
-        f"Enjoy your stay!\n\n",
-        f"*Byeee!*"
-    ]
-
-    # Join all parts into a single string
-    msg = ''.join(msg)
-
-    # Store the user's chat ID
-    if update.effective_chat.id not in user_chat_ids:
-        user_chat_ids[update.effective_chat.id] = {"started": True, "enabled": False}
-    else:
-        user_chat_ids[update.effective_chat.id]["started"] = True
-
-    # Send a message
-    await update.message.reply_text(msg, reply_markup=get_persistent_keyboard(), parse_mode='Markdown')
-
-async def end(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    chat_id = update.message.chat_id
-
-    # Check if the user has already started the bot
-    if (chat_id in user_chat_ids and user_chat_ids[chat_id]["started"] == False) or chat_id not in user_chat_ids:
-        await update.message.reply_text("You need to use the /start command to interact with the bot.")
-        return
-
-    # Remove scheduled jobs
-    jobs = context.job_queue.get_jobs_by_name(str(chat_id))
-    for job in jobs:
-        job.schedule_removal()
-
-    # Remove the user from the user_chat_ids
-    if chat_id in user_chat_ids:
-        user_chat_ids[update.effective_chat.id]["started"] = False
-        # del user_chat_ids[chat_id]
-    
-    print(user_chat_ids)
-
-    # Send a confirmation message to the user
-    await context.bot.send_message(
-        chat_id=chat_id, 
-        text="Your interaction with the bot has been ended. You will no longer receive messages.",
-        reply_markup=get_persistent_keyboard_after_end()
-    )
 
 async def start_auto_messaging(update, context):
     chat_id = update.message.chat_id
@@ -184,6 +130,12 @@ if __name__ == "__main__":
 
     # Replace 'YOUR_BOT_TOKEN' with the token you got from BotFather
     bot_token = os.getenv("BOT_TOKEN")
+
+    cred = credentials.Certificate('private/jackbotprice-firebase-adminsdk-b225s-a1fd9fc4c8.json')
+    firebase_admin.initialize_app(cred)
+
+    # Initialize Firestore DB
+    db = firestore.client()
 
     # Create the application
     app = ApplicationBuilder().token(bot_token).build()
