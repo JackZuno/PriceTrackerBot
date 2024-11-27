@@ -17,38 +17,33 @@ Finally, the **/help** command provides a list of all available commands in the 
 
 ## Usage Example
 
-<!-- <a id="start-image"></a>
-![start](images/start.jpg "start"){width="30%"}  -->
-
+The first image is showing the **start** command of the bot.
+The second image is showing the **stop** command of the bot.
+The third image is showing the **help** command of the bot.
 <div>
   <img src="images/start.jpg" alt="start" title="start" width="30%"  id="start-image"/>  
   <img src="images/end_bot.jpg" alt="end_bot" title="end_bot" width="30%"  id="stop-image"/>  
   <img src="images/help.jpg" alt="help" title="help" width="30%"  id="help-image"/>  
 </div>
 
-<!-- <a id="stop-image"></a>
-![stop-bot](images/end_bot.jpg "Stop Bot"){width="30%"} 
+The first image is showing the **add item** command of the bot.
+The second image is showing the **remove item** command of the bot.
+The third image is showing the result of the **remove item** command of the bot.
+<div>
+  <img src="images/add_item.jpg" alt="add_item" title="add_item" width="30%"  id="add-image"/>  
+  <img src="images/remove_pt1.jpg" alt="remove_pt1" title="remove_pt1" width="30%"  id="remove-pt1-image"/>  
+  <img src="images/remove_pt2.jpg" alt="remove_pt2" title="remove_pt2" width="30%"  id="remove-pt2-image"/>  
+</div>
 
-<a id="help-image"></a>
-![help](images/help.jpg "help"){width="30%"}
+The first image is showing the **enable/disable notification** command of the bot.
+The second image is showing the **notification message** of the bot.
+The third image is showing the result of the **list** command of the bot.
+<div>
+  <img src="images/enable_disable.jpg" alt="enable_disable" title="enable_disable" width="30%"  id="enable-image"/>  
+  <img src="images/notification_message.jpg" alt="notification_message" title="notification_message" width="30%"  id="msg-image"/>  
+  <img src="images/list.jpg" alt="list" title="list" width="30%"  id="list-image"/>  
+</div>
 
-<a id="add-image"></a>
-![add-item](images/add_item.jpg "add-item"){width="30%"}  -->
-
-<a id="remove-pt1-image"></a>
-![remove-pt1](images/remove_pt1.jpg "remove-pt1"){width="30%"} 
-
-<a id="remove-pt2-image"></a>
-![remove-pt2](images/remove_pt2.jpg "remove-pt2"){width="30%"}
-
-<a id="enable-image"></a> 
-![enable-disable](images/enable_disable.jpg "enable-disable"){width="30%"} 
-
-<a id="msg-image"></a>
-![notification-message](images/notification_message.jpg "notification-message"){width="30%"} 
-
-<a id="list-image"></a>
-![list](images/list.jpg "list"){width="30%"}
 
 <!-- <div style="display: flex; justify-content: space-between;">
   <img src="images/start.jpg" width="30%" />
