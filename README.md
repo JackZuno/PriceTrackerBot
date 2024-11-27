@@ -17,8 +17,12 @@ Finally, the **/help** command provides a list of all available commands in the 
 
 ## Usage Example
 
-<a id="start-image"></a>
-![start](images/start.jpg "start"){width="30%"} 
+<!-- <a id="start-image"></a>
+![start](images/start.jpg "start"){width="30%"}  -->
+
+<div id="start-image">
+  <img src="images/start.jpg" alt="start" title="start" width="30%" />
+</div>
 
 <a id="stop-image"></a>
 ![stop-bot](images/end_bot.jpg "Stop Bot"){width="30%"} 
