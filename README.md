@@ -17,7 +17,7 @@ Finally, the **/help** command provides a list of all available commands in the 
 
 ## Usage Example
 
-<div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+<div style="display: flex; justify-content: space-between; margin-bottom: 50px;">
   <figure style="text-align: center;">
     <img src="images/start.jpg" width="25%" />
     <figcaption>Start Bot</figcaption>
@@ -32,7 +32,7 @@ Finally, the **/help** command provides a list of all available commands in the 
   </figure>
 </div>
 
-<div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+<div style="display: flex; justify-content: space-between; margin-bottom: 50px;">
   <figure style="text-align: center;">
     <img src="images/add_item.jpg" width="25%" />
     <figcaption>Add Item</figcaption>
