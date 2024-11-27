@@ -1,7 +1,7 @@
 # AmazonPriceBot
 
 ## Content
-The AmazonPriceBot is a Telegram bot designed to track price fluctuations of specific items. Users can add items to the bot's watchlist using the **/add** command (["add example"](#add-image)), where the only required parameter is the item's URL. Currently, the bot supports online stores such as Amazon (tested with Amazon IT and UK), eBay (tested with eBay IT, UK, and USA), and the Lego Store.
+The AmazonPriceBot is a Telegram bot designed to track price fluctuations of specific items. Users can start the bot with the command **/start** (["start example"](#start-image)). He can add items to the bot's watchlist using the **/add** command (["add example"](#add-image)), where the only required parameter is the item's URL. Currently, the bot supports online stores such as Amazon (tested with Amazon IT and UK), eBay (tested with eBay IT, UK, and USA), and the Lego Store.
 
 Once items are added, they can be listed using the **/list** command (["list example"](#list-image)). This command will display key details for each item, including its *name*, *initial price* at the time of addition, *date* of addition, and the *current price*. It will also show the *lowest* and *highest price* recorded, along with a clickable URL that directs to the product page.
 
@@ -20,18 +20,20 @@ Finally, the **/help** command provides a list of all available commands in the 
 <!-- <a id="start-image"></a>
 ![start](images/start.jpg "start"){width="30%"}  -->
 
-<div id="start-image">
-  <img src="images/start.jpg" alt="start" title="start" width="30%" />
+<div>
+  <img src="images/start.jpg" alt="start" title="start" width="30%"  id="start-image"/>  
+  <img src="images/end_bot.jpg" alt="end_bot" title="end_bot" width="30%"  id="stop-image"/>  
+  <img src="images/help.jpg" alt="help" title="help" width="30%"  id="help-image"/>  
 </div>
 
-<a id="stop-image"></a>
+<!-- <a id="stop-image"></a>
 ![stop-bot](images/end_bot.jpg "Stop Bot"){width="30%"} 
 
 <a id="help-image"></a>
 ![help](images/help.jpg "help"){width="30%"}
 
 <a id="add-image"></a>
-![add-item](images/add_item.jpg "add-item"){width="30%"} 
+![add-item](images/add_item.jpg "add-item"){width="30%"}  -->
 
 <a id="remove-pt1-image"></a>
 ![remove-pt1](images/remove_pt1.jpg "remove-pt1"){width="30%"} 
