@@ -17,47 +17,47 @@ Finally, the **/help** command provides a list of all available commands in the 
 
 ## Usage Example
 
-<div style="display: flex; justify-content: space-between; gap: 20px; margin-bottom: 50px;">
-  <figure style="text-align: center;">
-    <img src="images/start.jpg" width="25%" />
+<div style="display: flex; justify-content: space-between; margin-bottom: 50px;">
+  <figure style="text-align: center; flex: 1; display: block;">
+    <img src="images/start.jpg" width="80%" style="display: block; margin: 0 auto;" />
     <figcaption>Start Bot</figcaption>
   </figure>
-  <figure style="text-align: center;">
-    <img src="images/end_bot.jpg" width="25%" />
+  <figure style="text-align: center; flex: 1; display: block;">
+    <img src="images/end_bot.jpg" width="80%" style="display: block; margin: 0 auto;" />
     <figcaption>Stop Bot</figcaption>
   </figure>
-  <figure style="text-align: center;">
-    <img src="images/help.jpg" width="25%" />
+  <figure style="text-align: center; flex: 1; display: block;">
+    <img src="images/help.jpg" width="80%" style="display: block; margin: 0 auto;" />
     <figcaption>Help</figcaption>
   </figure>
 </div>
 
-<div style="display: flex; justify-content: space-between; gap: 20px; margin-bottom: 50px;">
-  <figure style="text-align: center;">
-    <img src="images/add_item.jpg" width="25%" />
+<div style="display: flex; justify-content: space-between; margin-bottom: 50px;">
+  <figure style="text-align: center; flex: 1; display: block;">
+    <img src="images/add_item.jpg" width="80%" style="display: block; margin: 0 auto;" />
     <figcaption>Add Item</figcaption>
   </figure>
-  <figure style="text-align: center;">
-    <img src="images/remove_pt1.jpg" width="25%" />
+  <figure style="text-align: center; flex: 1; display: block;">
+    <img src="images/remove_pt1.jpg" width="80%" style="display: block; margin: 0 auto;" />
     <figcaption>Remove Part 1</figcaption>
   </figure>
-  <figure style="text-align: center;">
-    <img src="images/remove_pt2.jpg" width="25%" />
+  <figure style="text-align: center; flex: 1; display: block;">
+    <img src="images/remove_pt2.jpg" width="80%" style="display: block; margin: 0 auto;" />
     <figcaption>Remove Part 2</figcaption>
   </figure>
 </div>
 
-<div style="display: flex; justify-content: space-between; gap: 20px;">
-  <figure style="text-align: center;">
-    <img src="images/enable_disable.jpg" width="25%" />
+<div style="display: flex; justify-content: space-between; margin-bottom: 50px;">
+  <figure style="text-align: center; flex: 1; display: block;">
+    <img src="images/enable_disable.jpg" width="80%" style="display: block; margin: 0 auto;" />
     <figcaption>Enable/Disable Notifications</figcaption>
   </figure>
-  <figure style="text-align: center;">
-    <img src="images/notification_message.jpg" width="25%" />
+  <figure style="text-align: center; flex: 1; display: block;">
+    <img src="images/notification_message.jpg" width="80%" style="display: block; margin: 0 auto;" />
     <figcaption>Notification Message</figcaption>
   </figure>
-  <figure style="text-align: center;">
-    <img src="images/list.jpg" width="25%" />
+  <figure style="text-align: center; flex: 1; display: block;">
+    <img src="images/list.jpg" width="80%" style="display: block; margin: 0 auto;" />
     <figcaption>List all items</figcaption>
   </figure>
 </div>
