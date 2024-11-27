@@ -17,7 +17,7 @@ Finally, the **/help** command provides a list of all available commands in the 
 
 ## Usage Example
 
-<div style="display: flex; justify-content: space-between; margin-bottom: 50px;">
+<div style="display: flex; justify-content: space-between; gap: 20px; margin-bottom: 50px;">
   <figure style="text-align: center;">
     <img src="images/start.jpg" width="25%" />
     <figcaption>Start Bot</figcaption>
@@ -28,11 +28,11 @@ Finally, the **/help** command provides a list of all available commands in the 
   </figure>
   <figure style="text-align: center;">
     <img src="images/help.jpg" width="25%" />
-    <figcaption>Help </figcaption>
+    <figcaption>Help</figcaption>
   </figure>
 </div>
 
-<div style="display: flex; justify-content: space-between; margin-bottom: 50px;">
+<div style="display: flex; justify-content: space-between; gap: 20px; margin-bottom: 50px;">
   <figure style="text-align: center;">
     <img src="images/add_item.jpg" width="25%" />
     <figcaption>Add Item</figcaption>
@@ -47,7 +47,7 @@ Finally, the **/help** command provides a list of all available commands in the 
   </figure>
 </div>
 
-<div style="display: flex; justify-content: space-between;">
+<div style="display: flex; justify-content: space-between; gap: 20px;">
   <figure style="text-align: center;">
     <img src="images/enable_disable.jpg" width="25%" />
     <figcaption>Enable/Disable Notifications</figcaption>
