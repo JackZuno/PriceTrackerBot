@@ -19,45 +19,45 @@ Finally, the **/help** command provides a list of all available commands in the 
 
 <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
   <figure style="text-align: center;">
-    <img src="images/start.jpg" width="30%" />
+    <img src="images/start.jpg" width="25%" />
     <figcaption>Start Bot</figcaption>
   </figure>
   <figure style="text-align: center;">
-    <img src="images/end_bot.jpg" width="30%" />
+    <img src="images/end_bot.jpg" width="25%" />
     <figcaption>Stop Bot</figcaption>
   </figure>
   <figure style="text-align: center;">
-    <img src="images/help.jpg" width="30%" />
+    <img src="images/help.jpg" width="25%" />
     <figcaption>Help </figcaption>
   </figure>
 </div>
 
 <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
   <figure style="text-align: center;">
-    <img src="images/add_item.jpg" width="30%" />
+    <img src="images/add_item.jpg" width="25%" />
     <figcaption>Add Item</figcaption>
   </figure>
   <figure style="text-align: center;">
-    <img src="images/remove_pt1.jpg" width="30%" />
+    <img src="images/remove_pt1.jpg" width="25%" />
     <figcaption>Remove Part 1</figcaption>
   </figure>
   <figure style="text-align: center;">
-    <img src="images/remove_pt2.jpg" width="30%" />
+    <img src="images/remove_pt2.jpg" width="25%" />
     <figcaption>Remove Part 2</figcaption>
   </figure>
 </div>
 
 <div style="display: flex; justify-content: space-between;">
   <figure style="text-align: center;">
-    <img src="images/enable_disable.jpg" width="30%" />
+    <img src="images/enable_disable.jpg" width="25%" />
     <figcaption>Enable/Disable Notifications</figcaption>
   </figure>
   <figure style="text-align: center;">
-    <img src="images/notification_message.jpg" width="30%" />
+    <img src="images/notification_message.jpg" width="25%" />
     <figcaption>Notification Message</figcaption>
   </figure>
   <figure style="text-align: center;">
-    <img src="images/list.jpg" width="30%" />
+    <img src="images/list.jpg" width="25%" />
     <figcaption>List all items</figcaption>
   </figure>
 </div>
