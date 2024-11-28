@@ -1,0 +1,8 @@
+apscheduler==3.11.0
+beautifulsoup4==4.12.3
+firebase_admin==6.6.0
+protobuf==5.29.0
+python-dotenv==1.0.1
+python-telegram-bot==21.7
+Requests==2.32.3
+python-telegram-bot[job-queue]
