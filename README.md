@@ -19,7 +19,7 @@ Finally, the **/help** command provides a list of all available commands in the 
 
 The first image is showing the **start** command of the bot.\
 The second image is showing the **stop** command of the bot.\
-The third image is showing the **help** command of the bot.\
+The third image is showing the **help** command of the bot.
 <div>
   <img src="images/start.jpg" alt="start" title="start" width="30%"  id="start-image"/>  
   <img src="images/end_bot.jpg" alt="end_bot" title="end_bot" width="30%"  id="stop-image"/>  
@@ -28,7 +28,7 @@ The third image is showing the **help** command of the bot.\
 
 The first image is showing the **add item** command of the bot.\
 The second image is showing the **remove item** command of the bot.\
-The third image is showing the result of the **remove item** command of the bot.\
+The third image is showing the result of the **remove item** command of the bot.
 <div>
   <img src="images/add_item.jpg" alt="add_item" title="add_item" width="30%"  id="add-image"/>  
   <img src="images/remove_pt1.jpg" alt="remove_pt1" title="remove_pt1" width="30%"  id="remove-pt1-image"/>  
@@ -37,7 +37,7 @@ The third image is showing the result of the **remove item** command of the bot.
 
 The first image is showing the **enable/disable notification** command of the bot.\
 The second image is showing the **notification message** of the bot.\
-The third image is showing the result of the **list** command of the bot.\
+The third image is showing the result of the **list** command of the bot.
 <div>
   <img src="images/enable_disable.jpg" alt="enable_disable" title="enable_disable" width="30%"  id="enable-image"/>  
   <img src="images/notification_message.jpg" alt="notification_message" title="notification_message" width="30%"  id="msg-image"/>  
