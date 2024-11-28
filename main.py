@@ -7,6 +7,8 @@ import firebase_admin
 from firebase_admin import credentials, firestore
 from functions.commands.commands import start, start_auto_messaging, stop_notify, end, remove_item, list_item, help_command, handle_remove_item, add_new_item, ASK_URL
 from functions.commands.insert_url import cancel, handle_url
+from functions.users.manage_users import post_init
+
 
 if __name__ == "__main__":
     # Load environment variables from the .env file
@@ -22,7 +24,7 @@ if __name__ == "__main__":
     db = firestore.client()
 
     # Create the application
-    app = ApplicationBuilder().token(bot_token).build()
+    app = ApplicationBuilder().token(bot_token).post_init(post_init).build()
 
     # Define the conversation handler for adding a new item
     add_item_conv_handler = ConversationHandler(
@@ -77,3 +79,4 @@ if __name__ == "__main__":
     # Run the bot
     print("The bot is running")
     app.run_polling(allowed_updates=Update.ALL_TYPES)
+

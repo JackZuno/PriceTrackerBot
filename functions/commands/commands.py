@@ -123,7 +123,7 @@ async def start_auto_messaging(update, context):
     # Schedule daily messages
     context.job_queue.run_daily(
         scheduled_message, 
-        time=time(hour=17, minute=0), # UTC
+        time=time(hour=9, minute=14), # UTC
         days=(0, 1, 2, 3, 4, 5, 6), 
         chat_id=chat_id,  
         name=str(chat_id) 
@@ -131,7 +131,7 @@ async def start_auto_messaging(update, context):
 
     context.job_queue.run_daily(
         scheduled_message, 
-        time=time(hour=8, minute=3), # UTC
+        time=time(hour=21, minute=0), # UTC
         days=(0, 1, 2, 3, 4, 5, 6), 
         chat_id=chat_id,
         name=str(chat_id)  

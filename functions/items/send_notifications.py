@@ -46,10 +46,6 @@ async def scheduled_message(context: ContextTypes.DEFAULT_TYPE):
     # Extract all the items
     items = get_items_by_chat_id(db, chat_id)
 
-    print("\n##########################################################")
-    print(items)
-    print("##########################################################\n\n")
-
     final_message = ""
 
     if items:
@@ -76,7 +72,7 @@ async def scheduled_message(context: ContextTypes.DEFAULT_TYPE):
         await context.bot.send_message(chat_id=chat_id, text=final_message, parse_mode='Markdown', disable_web_page_preview=True)
     except Forbidden:
         print(f"User {chat_id} has blocked the bot.")
-        db.collection('users').document(str(chat_id)).update({'bot_on': False, 'notification_on': False})
+        db.collection('users').document(str(chat_id)).update({'bot_on': False, 'notifications_on': False})
 
 
 def generate_message(db, item):
