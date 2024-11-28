@@ -1,7 +1,7 @@
-# AmazonPriceBot
+# Price Tracker Bot
 
 ## Content
-The AmazonPriceBot is a Telegram bot designed to track price fluctuations of specific items. Users can start the bot with the command **/start** (["start example"](#start-image)). He can add items to the bot's watchlist using the **/add** command (["add example"](#add-image)), where the only required parameter is the item's URL. Currently, the bot supports online stores such as Amazon (tested with Amazon IT and UK), eBay (tested with eBay IT, UK, and USA), and the Lego Store.
+The **Price Tracker Bot** is a Telegram bot designed to track price fluctuations of specific items. Users can start the bot with the command **/start** (["start example"](#start-image)). He can add items to the bot's watchlist using the **/add** command (["add example"](#add-image)), where the only required parameter is the item's URL. Currently, the bot supports online stores such as Amazon (tested with Amazon IT and UK), eBay (tested with eBay IT, UK, and USA), and the Lego Store.
 
 Once items are added, they can be listed using the **/list** command (["list example"](#list-image)). This command will display key details for each item, including its *name*, *initial price* at the time of addition, *date* of addition, and the *current price*. It will also show the *lowest* and *highest price* recorded, along with a clickable URL that directs to the product page.
 
@@ -17,27 +17,27 @@ Finally, the **/help** command provides a list of all available commands in the 
 
 ## Usage Example
 
-The first image is showing the **start** command of the bot.
-The second image is showing the **stop** command of the bot.
-The third image is showing the **help** command of the bot.
+The first image is showing the **start** command of the bot.\
+The second image is showing the **stop** command of the bot.\
+The third image is showing the **help** command of the bot.\
 <div>
   <img src="images/start.jpg" alt="start" title="start" width="30%"  id="start-image"/>  
   <img src="images/end_bot.jpg" alt="end_bot" title="end_bot" width="30%"  id="stop-image"/>  
   <img src="images/help.jpg" alt="help" title="help" width="30%"  id="help-image"/>  
 </div>
 
-The first image is showing the **add item** command of the bot.
-The second image is showing the **remove item** command of the bot.
-The third image is showing the result of the **remove item** command of the bot.
+The first image is showing the **add item** command of the bot.\
+The second image is showing the **remove item** command of the bot.\
+The third image is showing the result of the **remove item** command of the bot.\
 <div>
   <img src="images/add_item.jpg" alt="add_item" title="add_item" width="30%"  id="add-image"/>  
   <img src="images/remove_pt1.jpg" alt="remove_pt1" title="remove_pt1" width="30%"  id="remove-pt1-image"/>  
   <img src="images/remove_pt2.jpg" alt="remove_pt2" title="remove_pt2" width="30%"  id="remove-pt2-image"/>  
 </div>
 
-The first image is showing the **enable/disable notification** command of the bot.
-The second image is showing the **notification message** of the bot.
-The third image is showing the result of the **list** command of the bot.
+The first image is showing the **enable/disable notification** command of the bot.\
+The second image is showing the **notification message** of the bot.\
+The third image is showing the result of the **list** command of the bot.\
 <div>
   <img src="images/enable_disable.jpg" alt="enable_disable" title="enable_disable" width="30%"  id="enable-image"/>  
   <img src="images/notification_message.jpg" alt="notification_message" title="notification_message" width="30%"  id="msg-image"/>  
