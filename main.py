@@ -17,7 +17,8 @@ if __name__ == "__main__":
     # Replace 'YOUR_BOT_TOKEN' with the token you got from BotFather
     bot_token = os.getenv("BOT_TOKEN")
 
-    cred = credentials.Certificate('private/jackbotprice-firebase-adminsdk-b225s-a1fd9fc4c8.json')
+    # cred = credentials.Certificate('private/jackbotprice-firebase-adminsdk-b225s-a1fd9fc4c8.json')
+    cred = credentials.Certificate('jackbotprice-firebase-adminsdk-b225s-a1fd9fc4c8.json')
     firebase_admin.initialize_app(cred)
 
     # Initialize Firestore DB

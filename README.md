@@ -64,4 +64,8 @@ The third image is showing the result of the **list** command of the bot.
   <img src="images/list.jpg" width="30%" />
 </div> -->
 
-python-telegram-bot[job-queue]
+## More Info
+It is important to install **python-telegram-bot[job-queue]**. If inserted inside the **requirements.txt** file, the installation return an error, in this way it works:
+```bash
+pip install "python-telegram-bot[job-queue]"
+```
