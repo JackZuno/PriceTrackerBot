@@ -63,3 +63,5 @@ The third image is showing the result of the **list** command of the bot.
   <img src="images/notification_message.jpg" width="30%" />
   <img src="images/list.jpg" width="30%" />
 </div> -->
+
+python-telegram-bot[job-queue]
